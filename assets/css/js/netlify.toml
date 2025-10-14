@@ -3,5 +3,5 @@
   command = ""
 
 [functions]
-  directory = "netlify/functions"
+  directory = "netlify"
   node_bundler = "esbuild"
