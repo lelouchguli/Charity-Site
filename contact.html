@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gulcare — Contact</title>
+  <meta name="description" content="Contactez Gulcare pour toute question, partenariat ou proposition de projet.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <main class="section">
+    <div class="container contact">
+      <header class="contact__head">
+        <h1 class="section-title">Contactez-nous</h1>
+        <p class="muted">Une question, un partenariat, un projet ? Écrivez-nous.</p>
+      </header>
+
+      <form id="contact-form" class="form form--card" novalidate>
+        <div class="grid2">
+          <label class="field">
+            <span>Nom complet</span>
+            <input type="text" name="name" required placeholder="Votre nom">
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="mouliom2001@gmail.com">
+          </label>
+        </div>
+        <label class="field">
+          <span>Sujet</span>
+          <input type="text" name="subject" required placeholder="Sujet de votre message">
+        </label>
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" rows="6" required placeholder="Votre message..."></textarea>
+        </label>
+
+        <button class="btn btn--donate" type="submit">Envoyer</button>
+        <p id="contact-status" class="form__status" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact__info">
+        <h2>Gulcare</h2>
+        <p class="muted">contact@gulcare.org<br>+4915958221229</p>
+        <p class="muted">Adresse — *****</p>
+      </aside>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

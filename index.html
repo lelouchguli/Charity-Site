@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="description" content="Gulcare est une association caritative qui finance des actions concrètes pour l’éducation, la santé et la protection des plus vulnérables.">
+  <meta name="theme-color" content="#E43E5A">
+
+<!-- Open Graph / Partage -->
+  <meta property="og:title" content="Gulcare — Agir pour les plus vulnérables">
+  <meta property="og:description" content="Rejoignez Gulcare : vos dons financent des actions concrètes et mesurables.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gulcare.org/">
+  <meta property="og:image" content="*****"> <!-- remplace par l’URL de ton visuel -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chariter — Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <!-- HERO (zones image = ***** à remplacer plus tard) -->
+  <section class="hero" role="banner">
+    <div class="hero__image" title="Image hero" style="background: url('enfant.JPG') center/cover no-repeat;">*****</div>
+    <div class="hero__content">
+      <div class="hero__text">
+        <h1 class="hero__title" style="color: rgb(201, 24, 24);">Support a causes<br>you care about</h1>
+        <p class="hero__desc">Ensemble, finançons des actions concrètes pour l’éducation, la santé et la dignité des plus vulnérables</p>
+        <a href="causes.html" class="btn btn--pill">Active Cases</a>
+      </div>
+      <div class="hero__dots" aria-hidden="true">
+        <span class="dot is-active"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Parcequ'un Geste Peut Creer Un Sourir</h2>
+    <div class="container cards">
+      <article class="card">
+        <div class="card__media" style="background:url('orphelinat.JPG') center/cover"><span class="badge">65%</span></div>
+        <div class="card__body">
+          <h3 class="card__title">Aide Orphelinat</h3>
+          <p class="card__text">parceque chaque enfants orphelin n'a pas choisi de l'etre et a aussi droit a une education et surtout un sourir au visage.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__media" style="background:url('puie.JPG') center/cover"><span class="badge">65%</span></div>
+        <div class="card__body">
+          <h3 class="card__title">GiveWater</h3>
+          <p class="card__text">Ensemble donnons a nos populations demunies une accebiliter en eau potable, a travers un puie .</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__media" style="background:url('une\ main.JPG') center/cover"><span class="badge">65%</span></div>
+        <div class="card__body">
+          <h3 class="card__title">NeverBeAlone</h3>
+          <p class="card__text">certain camerounais vivent dans la precariter , mais neanmoins on des reves et on juste besoin d'une main, donc ensemble rendons ce qui nous a ete donner</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- ===== DONATE / FAIRE UN DON ===== -->
+<section id="donate" class="section donate">
+  <div class="container donate__wrap">
+    <header class="donate__head">
+      <h2 class="section-title">Soutenez Gulcare</h2>
+      <p class="donate__sub">Votre don finance des actions concrètes et mesurables.</p>
+    </header>
+
+    <form id="donation-form" class="donate__form" novalidate>
+      <!-- Montants rapides -->
+      <div class="amounts" role="group" aria-label="Montants rapides">
+        <button type="button" class="chip" data-amount="10">10€</button>
+        <button type="button" class="chip" data-amount="20">20€</button>
+        <button type="button" class="chip" data-amount="50">50€</button>
+        <button type="button" class="chip" data-amount="100">100€</button>
+        <div class="chip chip--input">
+          <span>€</span>
+          <input type="number" min="1" step="1" id="custom-amount" placeholder="Autre" aria-label="Montant personnalisé">
+        </div>
+      </div>
+
+      <!-- Fréquence -->
+      <fieldset class="freq">
+        <legend>Fréquence</legend>
+        <label class="toggle">
+          <input type="radio" name="frequency" value="one-time" checked>
+          <span>Don ponctuel</span>
+        </label>
+        <label class="toggle">
+          <input type="radio" name="frequency" value="monthly">
+          <span>Mensuel</span>
+        </label>
+      </fieldset>
+
+      <!-- Infos minimales -->
+      <div class="grid2">
+        <label class="field">
+          <span>Nom complet</span>
+          <input type="text" id="donor-name" required placeholder="Votre nom">
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" id="donor-email" required placeholder="vous@exemple.com">
+        </label>
+      </div>
+
+      <button class="btn btn--donate btn--xl" type="submit">Faire un don</button>
+      <p class="donate__note">🔒 Paiement simulé pour l’instant (pas de CB). Nous brancherons un processeur à l’étape 4.</p>
+    </form>
+  </div>
+</section>
+
+
+  <div id="app-footer"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
